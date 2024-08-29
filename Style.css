@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -10,20 +10,12 @@ body {
 div.first {
     display: flex;
     background-color: #08575b;
-    width: 90%;
-    height: 70%;
+    width: 60%;
+    height: 80%;
     justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 110px;
-}
-
-div.FirstInner h1.Co{
-    color: white;
-    margin-top: 100%;
-    font-size: 40px;
-    text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
 }
 
 
@@ -33,17 +25,10 @@ div.Main {
     height: 100%;
     overflow: hidden;
     width: 70%;
-    background-color: #d2d3d5;
+    background-color: red;
 }
 
-div.first div.second {
-    display: flex;
-    height: 100%;
-    width: 60%;
-    margin-left: 5%;
-    margin-right: 70px;
-    background-color: #3a7a7c;
-}
+
 
 div.first div.FirstInner {
     display: flex;
@@ -53,26 +38,160 @@ div.first div.FirstInner {
     background-color: #a9aaae;
 }
 
-div.first h1 {
+div.FirstInner h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin-top: 100%;
+    padding: 15px;
+    margin-bottom: 80px;
+    padding-left: 0%;
+    text-align: left;
+    background-color: #467b81;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.second {
+    margin-right:80px;
+    width: 50%;
+    padding: 30px;
+    background-color: #3a7a7c;
+    position: relative;
+}
+
+.second h1 {
+    color: #013a42;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-div.second h2 {
-    background-color: red;
-    margin-left: 30%;
-    margin-top: 10%;
-    margin-bottom: 110%;
-    text-align: right;
-    font-family: Arial;
-    font-size: small;
+.header p {
     color: white;
+    font-family: 'Segoe UI';
 }
 
-a {
-    margin-left: 10%;
-    margin-top: 10%;
-    color: #185259;
+.header a {
+    font-size: 11px;
+    text-align: right;
+    color: #013a42;
     font-family: Arial;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    /* Space between columns */
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+    width: 80%;
+    height: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.checkbox-group label {
+    color: white;
+    margin-left: 20px;
+    margin-top: 5px;    
+}
+
+.checkbox-group a {
+    color: #013a42;
+    text-decoration: none;
+}
+
+.Create-account {
+    background-color: #013a42;
+    border: none;
+    height: 35px;
+    width: 200px;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    margin-left: 0%;
+    cursor: pointer;
+
+}
+
+.input-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-button button {
+    background-color: white;
+    font-size: 12px;
+    border: none;
+    text-align: center;
+    height: 35px;
+    width: 200px;
+    color: black;
+    margin-top: 10px;
+    margin-left: 0%;
+    cursor: pointer;
+}
+
+.input-button button img {
+    height: 20px;
+    width: 20px;
+}
+
+.second footer {
+    color: #013a42;
+    margin-left: 15px;
+    margin-top: 50px;
+    font-size: 10px;
+}
+
+i {
+    color: black;
+    padding-right: 5px;
+    font-size: 15px;
 }
